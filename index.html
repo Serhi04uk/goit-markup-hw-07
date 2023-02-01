@@ -24,7 +24,7 @@
           >Web<span class="logo-two">Studio</span></a
         >
 
-        <ul class="list list-header">
+        <ul class="list list-header list-header-tablet">
           <li class="link-header">
             <a class="menu-link link menu-link-visited" href="./index.html"
               >Studio</a
@@ -38,7 +38,12 @@
           </li>
         </ul>
       </nav>
-      <ul class="list list-header">
+      <button type="button" class="btn-header-mobil" js-open-menu>
+        <svg class="btn-header-mobil-icon" width="32px" height="22px">
+          <use href="./Images/icons/symbol-defs.svg#icon-list2"></use>
+        </svg>
+      </button>
+      <ul class="list list-header list-tablet">
         <li>
           <a class="contact-mail link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -50,10 +55,72 @@
           >
         </li>
       </ul>
+      <div class="mobile-menu" js-menu-container>
+        <button type="button" class="mobail-button" js-close-menu>
+          <svg class="mobail-icon" width="8px" height="8px">
+            <use
+              href="./Images/icons/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <ul class="list">
+          <li class="mobile-li">
+            <a class="link menu-link-mobaile" href="">Studio</a>
+          </li>
+          <li class="mobile-li">
+            <a class="link menu-link-mobaile" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="link menu-link-mobaile visited" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list mobaile-list">
+          <li class="mobail-number-list">
+            <a class="link mobail-number" href="">+11 (000) 111-11-11</a>
+          </li>
+          <li><a class="link mabail-mail" href="">info@devstudio.com</a></li>
+        </ul>
+        <ul class="list social-mobail">
+          <li class="social-mobail-item">
+            <a href="" class="social-mobail-link">
+              <svg class="social-mobail-icon" Width="24" Height="24">
+                <use
+                  href="./Images/icons/symbol-defs.svg#icon-instagram-2"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mobail-item">
+            <a href="" class="social-mobail-link">
+              <svg class="social-mobail-icon" Width="24" Height="20">
+                <use href="./Images/icons/symbol-defs.svg#icon-Group"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mobail-item">
+            <a href="" class="social-mobail-link">
+              <svg class="social-mobail-icon" Width="24" Height="24">
+                <use
+                  href="./Images/icons/symbol-defs.svg#icon-facebook-1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mobail-item">
+            <a href="" class="social-mobail-link">
+              <svg class="social-mobail-icon" Width="24" Height="24">
+                <use
+                  href="./Images/icons/symbol-defs.svg#icon-linkedin-1"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section class="hero hero-width">
+      <section class="hero-width">
         <div class="conteiner main-hero">
           <h1 class="main-title-two">Effective Solutions for Your Business</h1>
 
@@ -70,7 +137,6 @@
       <section class="section">
         <div class="conteiner">
           <ul class="list section-main-one">
-            <!-- !H2!-LIST -->
             <li class="paragraf-main">
               <div class="icon-section-one">
                 <svg Width="64" Height="64">
@@ -89,7 +155,7 @@
                   <use href="./Images/icons/symbol-defs.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="main-title">Punctuality</h3>
+              <h3 class="main-title main-title-topm">Punctuality</h3>
               <p class="paragraf paragraf-main-one">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -103,7 +169,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="main-title">Diligence</h3>
+              <h3 class="main-title main-title-topm">Diligence</h3>
               <p class="paragraf paragraf-main-one">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -117,7 +183,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="main-title">Technologies</h3>
+              <h3 class="main-title main-title-topm">Technologies</h3>
               <p class="paragraf paragraf-main-one">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -134,13 +200,28 @@
           </div>
           <ul class="list photo-list-main">
             <li class="img-list">
-              <img src="./Images/Desctop.jpg" alt="Desctop" width="360" />
+              <img
+                srcset="./Images/Desctop@2x.jpg 2x"
+                src="./Images/Desctop.jpg"
+                alt="Desctop"
+                width="360"
+              />
             </li>
             <li class="img-list">
-              <img src="./Images/Phones.jpg" alt="Phones" width="360" />
+              <img
+                srcset="./Images/Phones@2x.jpg 2x"
+                src="./Images/Phones.jpg"
+                alt="Phones"
+                width="360"
+              />
             </li>
             <li>
-              <img src="./Images/Phone.jpg" alt="Phone is activ" width="360" />
+              <img
+                srcset="./Images/Phone@2x.jpg 2x"
+                src="./Images/Phone.jpg"
+                alt="Phone is activ"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -153,6 +234,7 @@
           <ul class="list section-tree">
             <li class="section-tree-boarder">
               <img
+                srcset="./Images/Mark@2x.jpg 2x"
                 src="./Images/Mark.jpg"
                 alt="Mark"
                 width="264"
@@ -163,7 +245,7 @@
                 <h3 class="main-title-group">Mark Guerrero</h3>
                 <p class="paragraf-group">Product Designer</p>
                 <ul class="social-list list">
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -172,7 +254,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="13">
                         <use
@@ -181,7 +263,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -190,53 +272,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" Width="16" Height="16">
-                        <use
-                          href="./Images/icons/symbol-defs.svg#icon-linkedin-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="section-tree-boarder">
-              <img src="./Images/Tom.jpg" alt="Tom" width="264" height="260" />
-
-              <div class="section-tree-paragraf">
-                <h3 class="main-title-group">Tom Ford</h3>
-                <p class="paragraf-group">Frontend Developer</p>
-                <ul class="social-list list">
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" Width="16" Height="16">
-                        <use
-                          href="./Images/icons/symbol-defs.svg#icon-instagram-2"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" Width="16" Height="13">
-                        <use
-                          href="./Images/icons/symbol-defs.svg#icon-Group"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" Width="16" Height="16">
-                        <use
-                          href="./Images/icons/symbol-defs.svg#icon-facebook-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -250,6 +286,59 @@
             </li>
             <li class="section-tree-boarder">
               <img
+                srcset="./Images/Tom@2x.jpg 2x"
+                src="./Images/Tom.jpg"
+                alt="Tom"
+                width="264"
+                height="260"
+              />
+
+              <div class="section-tree-paragraf">
+                <h3 class="main-title-group">Tom Ford</h3>
+                <p class="paragraf-group">Frontend Developer</p>
+                <ul class="social-list list">
+                  <li>
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" Width="16" Height="16">
+                        <use
+                          href="./Images/icons/symbol-defs.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" Width="16" Height="13">
+                        <use
+                          href="./Images/icons/symbol-defs.svg#icon-Group"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" Width="16" Height="16">
+                        <use
+                          href="./Images/icons/symbol-defs.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" Width="16" Height="16">
+                        <use
+                          href="./Images/icons/symbol-defs.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="section-tree-boarder">
+              <img
+                srcset="./Images/Camila@2x.jpg 2x"
                 src="./Images/Camila.jpg"
                 alt="Camila"
                 width="264"
@@ -260,7 +349,7 @@
                 <h3 class="main-title-group">Camila Garcia</h3>
                 <p class="paragraf-group">Marketing</p>
                 <ul class="social-list list">
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -269,7 +358,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="13">
                         <use
@@ -278,7 +367,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -287,7 +376,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -301,6 +390,7 @@
             </li>
             <li class="section-tree-boarder">
               <img
+                srcset="./Images/Daniel@2x.jpg 2x"
                 src="./Images/Daniel.jpg"
                 alt="Daniel"
                 width="264"
@@ -311,7 +401,7 @@
                 <h3 class="main-title-group">Daniel Wilson</h3>
                 <p class="paragraf-group">UI Designer</p>
                 <ul class="social-list list">
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -320,7 +410,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="13">
                         <use
@@ -329,7 +419,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -338,7 +428,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
+                  <li>
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" Width="16" Height="16">
                         <use
@@ -420,7 +510,7 @@
         <div class="div-footer">
           <p class="paragra-footer-two">Social media</p>
           <ul class="list social-footer">
-            <li class="social-footer-item">
+            <li>
               <a href="" class="social-footer-link">
                 <svg class="social-footer-icon" Width="24" Height="24">
                   <use
@@ -429,14 +519,14 @@
                 </svg>
               </a>
             </li>
-            <li class="social-footer-item">
+            <li>
               <a href="" class="social-footer-link">
                 <svg class="social-footer-icon" Width="24" Height="20">
                   <use href="./Images/icons/symbol-defs.svg#icon-Group"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-footer-item">
+            <li>
               <a href="" class="social-footer-link">
                 <svg class="social-footer-icon" Width="24" Height="24">
                   <use
@@ -445,7 +535,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-footer-item">
+            <li>
               <a href="" class="social-footer-link">
                 <svg class="social-footer-icon" Width="24" Height="24">
                   <use
@@ -456,7 +546,7 @@
             </li>
           </ul>
         </div>
-        <div class="div-footer-two">
+        <div>
           <p class="paragra-footer-two">Subscribe</p>
 
           <form class="social-footer-two">
@@ -574,5 +664,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
