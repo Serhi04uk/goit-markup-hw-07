@@ -38,7 +38,7 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="btn-header-mobil" js-open-menu>
+      <button type="button" class="btn-header-mobil open-menu">
         <svg class="btn-header-mobil-icon" width="32px" height="22px">
           <use href="./Images/icons/symbol-defs.svg#icon-list2"></use>
         </svg>
@@ -55,15 +55,15 @@
           >
         </li>
       </ul>
-      <div class="mobile-menu" js-menu-container>
-        <button type="button" class="mobail-button" js-close-menu>
+      <div class="mobile-menu is-open menu-container">
+        <button type="button" class="mobail-button close-menu">
           <svg class="mobail-icon" width="8px" height="8px">
             <use
               href="./Images/icons/symbol-defs.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
         </button>
-        <ul class="list">
+        <ul class="list mobail-list-but">
           <li class="mobile-li">
             <a class="link menu-link-mobaile" href="">Studio</a>
           </li>
@@ -74,7 +74,7 @@
             <a class="link menu-link-mobaile visited" href="">Contacts</a>
           </li>
         </ul>
-        <ul class="list mobaile-list">
+        <ul class="list">
           <li class="mobail-number-list">
             <a class="link mobail-number" href="">+11 (000) 111-11-11</a>
           </li>
@@ -546,11 +546,11 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="wid-footer">
           <p class="paragra-footer-two">Subscribe</p>
 
           <form class="social-footer-two">
-            <label>
+            <label class="wid-footer-label">
               <input
                 class="label-footer"
                 type="email"
@@ -663,7 +663,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

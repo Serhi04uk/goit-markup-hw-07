@@ -106,28 +106,33 @@ button {
   .mobile-menu {
     position: fixed;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     z-index: 1000;
     top: 0;
     left: 0;
     background: #ffffff;
     padding: 80px 0 40px 40px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     transition: opacity 500ms linear, visibility 500ms linear;
   }
 
   .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .mobail-button {
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
     top: 40px;
     right: 40px;
     background: #e7e9fc;
@@ -154,10 +159,6 @@ button {
     color: #404bbf;
   }
 
-  .mobaile-list {
-    margin-top: 284px;
-  }
-
   .mobail-number {
     font-weight: 600;
     font-size: 36px;
@@ -181,7 +182,8 @@ button {
   .social-mobail {
     display: flex;
     justify-content: space-between;
-    width: 328px;
+    flex-wrap: wrap;
+
     margin-top: 48px;
   }
 
@@ -201,6 +203,10 @@ button {
 
   .social-mobail-icon {
     fill: #f4f4fd;
+  }
+
+  .mobail-list-but {
+    margin-bottom: auto;
   }
 }
 
@@ -226,6 +232,10 @@ button {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .flex-logo {
+    margin-right: auto;
   }
 }
 
@@ -335,10 +345,6 @@ button {
 
 /* LOGO! */
 
-.flex-logo {
-  margin-right: 76px;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -408,7 +414,7 @@ button {
     font-size: 36px;
     line-height: 1.07;
     color: var(--accent-color-upgrade-one);
-    width: 318px;
+    max-width: 318px;
     text-align: center;
   }
 
@@ -443,14 +449,27 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 392px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
   }
-
+  @media screen and (max-width: 767px) {
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      background: #fcfcfc;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      padding: 72px 24px 24px 24px;
+    }
+  }
   .modal-close-btn {
     position: absolute;
     top: 24px;
@@ -1047,7 +1066,7 @@ button {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    width: 260px;
+    max-width: 260px;
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -1305,7 +1324,7 @@ button {
     line-height: 1.5;
     color: var(--accent-color-upgrade-four);
     margin-top: 16px;
-    width: 264px;
+    max-width: 264px;
   }
 
   .paragra-footer-two {
@@ -1349,7 +1368,7 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 396px;
+    width: 100%;
     height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -1405,15 +1424,25 @@ button {
   }
 
   .footer-flex {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .social-footer-two {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .wid-footer {
+    width: 100%;
+  }
+
+  .wid-footer-label {
+    width: 100%;
   }
 }
 
@@ -2366,7 +2395,6 @@ button {
   }
 
   .block-modal-form-check {
-    /* display: flex; */
     margin-top: 16px;
     margin-bottom: 24px;
   }
